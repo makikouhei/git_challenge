@@ -1,0 +1,28 @@
+makikouhei@makikouheinoMacBook-Air ~ % ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+makikouhei@makikouheinoMacBook-Air ~ % cd Documents
+makikouhei@makikouheinoMacBook-Air Documents % mkdir git_challenge
+makikouhei@makikouheinoMacBook-Air Documents % cd git_challenge
+makikouhei@makikouheinoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/makikouhei/Documents/git_challenge/.git/
+makikouhei@makikouheinoMacBook-Air git_challenge % touch hello_world.txt
+makikouhei@makikouheinoMacBook-Air git_challenge % git add hello_world.txt
+makikouhei@makikouheinoMacBook-Air git_challenge % git commit -m "Hello, world! を記載"
+zsh: event not found: を記載
+makikouhei@makikouheinoMacBook-Air git_challenge % git commit -m "hello_world.txtを編集"
+[main (root-commit) b2849cd] hello_world.txtを編集
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+makikouhei@makikouheinoMacBook-Air git_challenge % git status
+On branch main
+nothing to commit, working tree clean
+makikouhei@makikouheinoMacBook-Air git_challenge % git add hello_world.txt
+
+makikouhei@makikouheinoMacBook-Air git_challenge % git commit -m "こんにちは世界！を追加"
+[main 54111a6] こんにちは世界！を追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+makikouhei@makikouheinoMacBook-Air git_challenge % git log --oneline
+54111a6 (HEAD -> main) こんにちは世界！を追加
+b2849cd hello_world.txtを編集
